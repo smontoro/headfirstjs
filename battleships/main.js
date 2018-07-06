@@ -9,9 +9,10 @@
 //game finishes
 //give the user a rating based on the number of guesses
 
-var location1 = 3
-var location2 = 4
-var location3 = 5
+var randomLoc = Math.floor(Math.random() * 5)
+var location1 = randomLoc
+var location2 = randomLoc + 1
+var location3 = randomLoc + 2
 var guess 
 var hits = 0
 var guesses = 0
@@ -27,7 +28,7 @@ while(isSunk == false){
 		//tell the user to enter a valid number
 		prompt("Please enter a valid cell number!")
 	//else
-	}else {
+	} else {
 		//add one to guesses
 		guesses = guesses + 1
 		//check to see if guess matches location cells
