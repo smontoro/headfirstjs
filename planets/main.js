@@ -1,7 +1,5 @@
-var access = document.getElementById("code9")
+var planet = document.getElementById("greenplanet")
 
-var code = access.innerHTML
+planet.innerHTML = "Red Alert: hit by phaser fire!"
 
-code = code + " midnight"
-
-alert(code)
+planet.setAttribute("class", "redtext")
